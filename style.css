@@ -1,0 +1,166 @@
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+
+#map.ol-zoom.ol-zoom-out{margin-top:204px;}
+#map.ol-touch.ol-zoom.ol-zoom-out{margin-top:212px;}
+
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+	height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+	font: .74em "Trebuchet MS" Verdana, Arial, sans-serif;
+	line-height: 1.5em; 
+}
+a {
+	color: #3B6EBF;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+#wrap {
+margin: 20px auto;
+width: 1200px;
+background: #fff url('images/midbg.jpg');
+background-repeat: repeat-y;
+}
+
+#top { 
+background: #fff url('images/topbg.jpg');
+height: 30px;
+}
+
+#content {
+padding: 0 40px 0 40px;
+}
+
+#bottom {
+
+background: #fff url('images/botbg.jpg');
+height: 30px;
+}
+
+
+
+.header {
+height: 100px;
+background: #85ACF7 url('images/hidr.jpg');
+}
+
+.header h1 { padding-left: 17px; padding-top: 22px; font-size: 22px; color: #FFF; }
+.header h1 a { font-size: 22px; color: #FFF; text-decoration: none;}
+.header h2 { padding-left: 17px; padding-top: 0px; font-size: 17px; color: #FFF; }
+
+.breadcrumbs { 
+    background: #F6F9FB; 
+	border-bottom: 1px solid #E1E1E1; 
+	padding: 5px;
+}
+	
+.middle {
+	float: left;
+	width: 69%;
+	margin: 0 10px;
+	padding: 1% 1%;
+	text-align: justify;
+}
+
+.map {
+
+	height: 500px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: justify;
+	display:none;
+	z-index:200;
+}
+#map {
+
+	height: 500px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: justify;
+	display:none;
+	z-index:200;
+}
+#layerControl{
+            position :absolute;
+            bottom:5px;
+            min-width:150px;
+            max-height:130px; 
+            top:530px;    
+            z-index:2001;   /*在地图容器中的层，要设置z-index的值让其显示在地图上层*/
+            color:#ffffff;
+            background-color:#4c4e5a;
+            border-width: 10px; /*边缘的宽度*/
+            border-radius: 10px;    /*圆角的大小 */ 
+            border-color: #000 #000 #000 #000;  /*边框颜色*/
+        }
+.layerControl .title{
+            font-weight:bold;
+            font-size:15px;
+            margin:10px;
+        }
+        .layerTree li
+        {
+             list-style:none; 
+             margin:5px 10px; 
+        }
+#mouse-position{
+            float:right-side;
+            position:absolute;
+            bottom:5px;
+            width:200px;
+            height:20px;         
+            z-index:2010;   /*在地图容器中的层，要设置z-index的值让其显示在地图上层*/
+        }
+
+
+.right {
+	float: left;
+	width: 17%;
+	margin: 0 5px;
+	padding: 1% 1%;
+	
+}
+
+.right ul {
+	padding: 10px 0 15px 20px;
+	margin:0;
+}
+
+.right li {
+	margin-bottom:5px;
+	list-style-type: square;
+	color: #3B6EBF;
+}
+
+.middle h2 { color: #3B6EBF; font-size: 16px; margin-bottom: 10px; margin-top: 10px;}
+.middle h3 { color: #3B6EBF; font-size: 14px; margin-bottom: 8px; margin-top: 8px;}
+.right h2 { color: #3B6EBF; font-size: 16px; margin-top: 15px;}
+
+
+#clear {
+	display: block;
+	clear: both;
+	width: 100%;
+	height:1px;
+	overflow:hidden;
+}
+
+#footer {
+	text-align: center;
+	color: #666;
+}
+
+
+#div2{max-width:1100px;max-height:500px;margin:30px auto;overflow:scroll;}

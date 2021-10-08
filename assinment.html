@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>prototype wesite of Wight</title>
+  <meta http-equiv="Content-Language" content="English" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no"/>
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.8.1/css/ol.css" type="text/css">
+  <link rel="stylesheet" href="https://js.arcgis.com/4.14/esri/themes/light/main.css"/>
+  <script src="index.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+  <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.8.1/build/ol.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAczx2nVpK2ifEG4IDm6pZJLszEhJX1Y_k&callback=initMap&libraries=&v=weekly" defer></script>
+  <script src="https://js.arcgis.com/4.14/"></script>
+  
+  
+</head>
+
+<body>
+  <div id="wrap">
+    <div id="top"></div>
+
+    <div id="content">
+      <div class="header">
+        <h1><a>Isle of Wight</a></h1>
+        <h2>Assignment of Web Mapping(Prototype website)</h2>
+      </div>
+
+      <div class="breadcrumbs">
+        <a href="javascript:void(0);" onclick="show1()">Home</a> &middot;
+        <a href="javascript:void(0);" onclick="show2()">Image mapping</a> &middot;
+        <a href="javascript:void(0);" onclick="show3()">Google Map APIs(JavaScript)</a> &middot;
+        <a href="javascript:void(0);" onclick="show4()">Google KMZ</a> &middot;
+        <a href="http://localhost/webmap_jin/arcgis.html">ESRI ArcGIS</a> &middot;
+        <a href="javascript:void(0);" onclick="show6()">OpenLayers</a>
+      </div>
+
+      <div id="div1">
+			
+      <h2>Inroduction</h2>
+This website serves as the job of the web mapping course and is used to introduce some basic conditions of the 
+Isle of Wight. This website uses different map loading methods to display the basic information of the Isle of Wight. 
+You can select different maps in the navigation bar to browse.
+      <h3>Home</h3>
+      What you see now is the homepage, where the basic information of the different maps and their specific functions are introduced.
+      <h3>Image mapping</h3>
+      A map of the Isle of Wight is placed in the image mapping. The map shows the main towns and transportation routes on the Isle of Wight. 
+	  <br>The map can be zoomed in and out using the mouse wheel.</br>	
+	  <h3>Google Map</h3>
+	  The call of Google Maps is divided into two modules.
+      <br>The first part is to show the geographical data of the center of the Isle of Wight.
+	      And some introduction information about the Isle of Wight.
+      <br>The second part shows the main traffic routes on the Isle of Wight through KML files.</br>
+	  <h3>ESRI ArcGIS</h3>
+	  This map shows more things. It includes settlements, iso-rainfall maps of the Isle of Wight, distribution of different types of soil and some major roads.
+      <h3>OpenLayers</h3>
+	  In this map I loaded two layers, these two layers can choose whether to display. At the same time, a simple real-time display of the longitude and latitude of the mouse has been added.
+	  </div>
+	  
+	
+	  <div id="div2" style="display:none;height:500px;width:1100px;margin:0 auto" >
+	    <img src="iow.jpg" id="myimage" alt="my image"/>
+	  </div>
+
+      <div id="div3" class="map">
+	  </div>
+	  
+	  <div id="div4" class="map">
+	  </div>
+	  
+	  <div id="div5" class="map">
+	  </div>	  
+	  
+	  <div id="div6" class="map">
+	    <div id="mouse-position" ></div>
+		<div id="layerControl" class="layerControl">
+            <div class="title"><label>Layers</label></div>
+            <ul id="layerTree" class="layerTree"></ul>
+        </div>
+	  </div>
+	  
+
+
+    <div id="clear"></div>
+
+  </div>
+
+    <div id="bottom"></div>
+
+  </div>
+
+  <div id="footer">
+Yiren Jin S307470
+  </div>
+
+</body>
+</html>
